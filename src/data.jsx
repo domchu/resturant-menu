@@ -72,9 +72,9 @@ const menu = [
     desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
   },
   {
-    id: 1,
+    id: 10,
     title: "buttermilk pancakes",
-    category: "breakfast",
+    category: "dinner",
     price: 15.99,
     img: "./images/item-1.jpeg",
     desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
