@@ -6,6 +6,13 @@ import items from "./data";
 function App() {
   const [menuItems, setMenuItems] = useState(items);
   const [categories, setCategories] = useState([]);
+
+  //* filter the json that matches the category
+  const filterItems = (category) => {
+    const newItems = items.filter((item) => item.category === category);
+    setMenuItems(newItems);
+  };
+
   return (
     <main>
       <section className="menu section">
@@ -13,7 +20,7 @@ function App() {
           <h3> Menu App</h3>
           <div className="underline"></div>
         </div>
-        <Categories />
+        <Categories filterItems={filterItems} />
         <Menu items={menuItems} />
       </section>
     </main>
